@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
-    public class Strikes
+    public class Strike
     {
         [Key]
-        public int ID { get; set; }
-        public int IDAlumno { get; set; }
-        public int IDUsuario { get; set; }
+        public int Id { get; set; }
+        public int IdAlumno { get; set; }
+        public int IdUsuario { get; set; }
         public string Motivo { get; set; }
     }
 }

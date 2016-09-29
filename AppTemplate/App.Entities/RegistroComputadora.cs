@@ -9,10 +9,13 @@ namespace App.Entities
 {
     public class RegistroComputadora
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [Key]
-        public int ID { get; set; }
-        public int IDAlumno { get; set; }
-        public int IDComputadora { get; set; }
+        public int Id { get; set; }
+        public int IdAlumno { get; set; }
+        public int IdComputadora { get; set; }
         public DateTime FechaHoraInicio  { get; set; }
         public DateTime FechaHoraFinal { get; set; }
     }
