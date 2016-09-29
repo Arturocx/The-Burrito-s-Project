@@ -17,5 +17,11 @@ namespace App.Entities
         public string Foto { get; set; }
         public bool Bloqueado { get; set; }
 
+        /// <summary>
+        /// Relación con RegistroComputadora
+        /// </summary>
+        public virtual ICollection<RegistroComputadora> RegistroComputadora { get; set; }
+
+
     }
 }
