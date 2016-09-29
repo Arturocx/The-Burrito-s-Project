@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
-    public class Strike
+    public class Strikes
     {
         [Key]
         public int Id { get; set; }

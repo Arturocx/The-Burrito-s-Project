@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 
-namespace Libros
+namespace App.Entities
 {
     public class Libro
     {
