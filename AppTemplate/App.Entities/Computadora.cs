@@ -7,7 +7,9 @@ using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
     public class Computadora
-    {
+    {  
+      
+
         [Key]
         public int Id { get; set; }
         public int NoCubiculo { get; set; }

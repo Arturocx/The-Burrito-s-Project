@@ -22,6 +22,19 @@ namespace App.Entities
         /// </summary>
         public virtual ICollection<RegistroComputadora> RegistroComputadora { get; set; }
 
+        /// <summary>
+        /// Relación con RegistroAjedrez
+        /// </summary>
+        public virtual ICollection<RegistroAjedrez> RegistroAjedrez { get; set; }
 
+        /// <summary>
+        /// Relación a RegistrodeLibro
+        /// </summary>
+        public virtual ICollection<Registro_de_Libro> RegistroLibro { get; set; }
+
+        /// <summary>
+        /// Relación a Strikes
+        /// </summary>
+        public virtual ICollection<Strikes> Strikes { get; set; }
     }
 }

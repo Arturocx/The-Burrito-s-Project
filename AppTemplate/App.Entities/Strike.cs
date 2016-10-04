@@ -13,5 +13,12 @@ namespace App.Entities
         public int IdAlumno { get; set; }
         public int IdUsuario { get; set; }
         public string Motivo { get; set; }
+
+        /// <summary>
+        /// Llave foranea de Alumno
+        /// </summary>
+        public int IdAlumno { get; set; }
+        public Alumno Alumno { get; set; }
+
     }
 }

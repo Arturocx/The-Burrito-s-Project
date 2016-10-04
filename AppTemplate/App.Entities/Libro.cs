@@ -8,6 +8,8 @@ namespace App.Entities
 {
     public class Libro
     {
+       
+        
         [Key]
         public int Id { get; set; }
         public string Nombre { get; set; }
@@ -15,6 +17,9 @@ namespace App.Entities
         public string Materia { get; set; }
         public string Detalles { get; set; }
 
-
+        /// <summary>
+        /// Relación a RegistrodeLibro
+        /// </summary>
+        public virtual ICollection<Registro_de_Libro> RegistroLibro { get; set; }
     }
 }

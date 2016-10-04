@@ -9,6 +9,8 @@ namespace App.Entities
 {
     public class RegistroComputadora
     {
+      
+    
         /// <summary>
         /// Identificador de la tabla Registro Computadora
         /// </summary>
