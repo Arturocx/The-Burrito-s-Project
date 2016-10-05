@@ -10,8 +10,6 @@ namespace App.Entities
     {
         [Key]
         public int Id { get; set; }
-        public int IdAlumno { get; set; }
-        public int IdUsuario { get; set; }
         public string Motivo { get; set; }
 
         /// <summary>
@@ -24,7 +22,7 @@ namespace App.Entities
         /// Llave foranea de Usuario
         /// </summary>
         public int IdUsuario { get; set; }
-        public Usario Usuario { get; set; }
+        public Usuario Usuario { get; set; }
 
     }
 }

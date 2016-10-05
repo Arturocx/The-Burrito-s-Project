@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
-    public class Strikes
+    public class Usuario
     {
-        public Strikes()
+        public Usuario()
         {
             this.Strikes = new HashSet<Strikes>();
         }

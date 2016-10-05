@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using App.Entities;
-namespace DAL
+namespace App.DAL
 {
   public  class AppDBContext : DbContext
    {
@@ -30,6 +30,6 @@ namespace DAL
        public DbSet<RegistroComputadora> RegistroComputadora { get; set; }
        public DbSet<Registro_de_Libro> RegistroLibro { get; set; }
        public DbSet<Strikes> Strikes { get; set; }
-       public DbSet<Usario> Usuario { get; set; }
+       public DbSet<Usuario> Usuario { get; set; }
    }
 }
