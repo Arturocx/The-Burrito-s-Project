@@ -9,6 +9,11 @@ namespace App.Entities
 {
     public class Ajedrez
     {
+        public Ajedrez()
+        {
+            this.RegistroAjedrez = new HashSet<RegistroAjedrez>();
+        }
+
         /// <summary>
         /// Identificador de la tabla Registro Ajedrez
         /// </summary>

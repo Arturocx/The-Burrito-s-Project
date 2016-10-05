@@ -7,8 +7,11 @@ using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
     public class Computadora
-    {  
-      
+    {
+        public Computadora()
+        {
+            this.RegistroComputadora = new HashSet<RegistroComputadora>();
+        }
 
         [Key]
         public int Id { get; set; }

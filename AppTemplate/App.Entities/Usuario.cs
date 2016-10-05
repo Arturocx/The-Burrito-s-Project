@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace App.Entities
 {
-    public class Usario
+    public class Strikes
     {
+        public Strikes()
+        {
+            this.Strikes = new HashSet<Strikes>();
+        }
+
         [Key]
         public int Id { get; set; }
         public string Nombre { get; set; }
@@ -15,5 +20,10 @@ namespace App.Entities
         public string Username { get; set; }
         public string APaterno { get; set; }
         public string AMaterno { get; set; }
+
+        /// <summary>
+        /// Relación a Strikes
+        /// </summary>
+        public virtual ICollection<Strikes> Strikes { get; set; }
     }
 }

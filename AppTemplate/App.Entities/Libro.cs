@@ -8,8 +8,10 @@ namespace App.Entities
 {
     public class Libro
     {
-       
-        
+        public Libro()
+        {
+            this.RegistroLibro = new HashSet<Registro_de_Libro>();
+        }
         [Key]
         public int Id { get; set; }
         public string Nombre { get; set; }

@@ -9,6 +9,13 @@ namespace App.Entities
 {
     public class Alumno
     {
+        public Alumno()
+        {
+            this.RegistroAjedrez = new HashSet<RegistroAjedrez>();
+            this.RegistroComputadora = new HashSet<RegistroComputadora>();
+            this.RegistroLibro = new HashSet<Registro_de_Libro>();
+            this.Strikes = new HashSet<Strikes>();
+        }
         [Key]
         public int Id { get; set; }
         public int NoControl { get; set; }

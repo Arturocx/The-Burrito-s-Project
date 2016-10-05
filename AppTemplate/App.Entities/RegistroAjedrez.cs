@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace App.Entities
 {
-    class RegistroAjedrez
+    public class RegistroAjedrez
     {
         [Key]
         public int Id { get; set; }
