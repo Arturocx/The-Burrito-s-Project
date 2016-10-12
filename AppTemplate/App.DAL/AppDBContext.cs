@@ -19,7 +19,12 @@ namespace App.DAL
 
        public AppDBContext() : base("BurritosConnName")
        {
+           this.Configuration.ValidateOnSaveEnabled = false;
 
+       }
+       static AppDBContext()
+       {
+           DbConfiguration.SetConfiguration(new MySql.Data.Entity.MySqlEFConfiguration());
        }
 
        public DbSet<Ajedrez> Ajedrez { get; set; }
