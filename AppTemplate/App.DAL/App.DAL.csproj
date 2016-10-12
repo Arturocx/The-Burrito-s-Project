@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlumnoRepo.cs" />
     <Compile Include="AppDBContext.cs" />
     <Compile Include="Migrations\201610050453131_init.cs" />
     <Compile Include="Migrations\201610050453131_init.Designer.cs">
