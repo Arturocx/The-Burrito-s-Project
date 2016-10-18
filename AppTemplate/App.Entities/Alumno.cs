@@ -21,6 +21,7 @@ namespace App.Entities
         public int NoControl { get; set; }
         public string Grupo { get; set; }
         public string Nombre { get; set; }
+        public string Apellido { get; set; }
         public string Foto { get; set; }
         public bool Bloqueado { get; set; }
 

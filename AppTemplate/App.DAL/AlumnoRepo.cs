@@ -7,7 +7,7 @@ using App.Entities;
 
 namespace App.DAL
 {
-    class AlumnoRepo
+    public class AlumnoRepo
     {
         private AppDBContext _Contexto;
         
@@ -28,5 +28,16 @@ namespace App.DAL
             _Contexto.SaveChanges();
         }
 
+        //select * front Alumno orden by nocontrol
+        public List<Alumno> TraerTodo()
+        {
+            return _Contexto.Alumno.OrderBy(x => x.NoControl).ToList();
+
+        }
+        //select * from alumno where Id = 3
+        public Alumno TraerPorId(int id)
+        {
+            return _Contexto.Alumno.FirstOrDefault(x => x.Id == id);
+        }
     }
 }
