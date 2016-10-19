@@ -23,7 +23,6 @@ namespace App.Controllers
         // GET: /Alumno/
         public ActionResult Index()
         {
-            _alumnoEntity.Id = 170414;
             _alumnoEntity.NoControl = 123456;
             _alumnoEntity.Grupo = "5DM";
             _alumnoEntity.Nombre = "Miguel";

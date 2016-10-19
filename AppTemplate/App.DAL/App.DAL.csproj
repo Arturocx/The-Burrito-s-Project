@@ -53,14 +53,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjedrezRepo.cs" />
     <Compile Include="AlumnoRepo.cs" />
     <Compile Include="AppDBContext.cs" />
+    <Compile Include="ComputadoraRepo.cs" />
+    <Compile Include="LibroRepo.cs" />
     <Compile Include="Migrations\201610050453131_init.cs" />
     <Compile Include="Migrations\201610050453131_init.Designer.cs">
       <DependentUpon>201610050453131_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroAjedrezRepo.cs" />
+    <Compile Include="RegistroComputadoraRepo.cs" />
+    <Compile Include="RegistroLibroRepo.cs" />
+    <Compile Include="StrikeRepo.cs" />
+    <Compile Include="UsuarioRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\APP.Entities\App.Entities.csproj">

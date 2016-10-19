@@ -28,7 +28,7 @@ namespace App.DAL
             _Contexto.SaveChanges();
         }
 
-        //select * front Alumno orden by nocontrol
+        //select * front Alumno orden by NoControl
         public List<Alumno> TraerTodo()
         {
             return _Contexto.Alumno.OrderBy(x => x.NoControl).ToList();

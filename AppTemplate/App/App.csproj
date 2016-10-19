@@ -161,8 +161,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
+    <Compile Include="Controllers\AjedrezController.cs" />
     <Compile Include="Controllers\AlumnoController.cs" />
+    <Compile Include="Controllers\ComputadoraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LibroController.cs" />
+    <Compile Include="Controllers\StrikeController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -214,7 +219,15 @@
   <ItemGroup>
     <Folder Include="Filters\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Views\Ajedrez\" />
     <Folder Include="Views\Alumno\" />
+    <Folder Include="Views\Computadora\" />
+    <Folder Include="Views\Libro\" />
+    <Folder Include="Views\RegistroAjedrez\" />
+    <Folder Include="Views\RegistroComputadora\" />
+    <Folder Include="Views\RegistroLibro\" />
+    <Folder Include="Views\Strike\" />
+    <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

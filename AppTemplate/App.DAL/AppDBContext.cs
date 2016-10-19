@@ -29,7 +29,7 @@ namespace App.DAL
 
        public DbSet<Ajedrez> Ajedrez { get; set; }
        public DbSet<Alumno> Alumno { get; set; }
-       public DbSet<Computadora> Computadoras { get; set; }
+       public DbSet<Computadora> Computadora { get; set; }
        public DbSet<Libro> Libro { get; set; }
        public DbSet<RegistroAjedrez> RegistroAjedrez { get; set; }
        public DbSet<RegistroComputadora> RegistroComputadora { get; set; }

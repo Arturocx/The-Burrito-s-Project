@@ -39,9 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjedrezBLL.cs" />
     <Compile Include="AlumnoBLL.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="ComputadoraBLL.cs" />
+    <Compile Include="LibroBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroAjedrezBLL.cs" />
+    <Compile Include="RegistroComputadoraBLL.cs" />
+    <Compile Include="RegistroLibroBLL.cs" />
+    <Compile Include="StrikeBLL.cs" />
+    <Compile Include="UsuarioBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\App.DAL\App.DAL.csproj">
