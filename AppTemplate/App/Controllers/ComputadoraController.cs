@@ -27,7 +27,6 @@ namespace App.Controllers
             _computadoraEntity.ModeloCompu = "PS511U-02WYJJ";
             _computadoraEntity.Status = "Bien";
             _computadoraBll.Agregar(_computadoraEntity);
-
             return View();
         }
 	}

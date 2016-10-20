@@ -165,7 +165,10 @@
     <Compile Include="Controllers\AlumnoController.cs" />
     <Compile Include="Controllers\ComputadoraController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegistroAjedrezController.cs" />
     <Compile Include="Controllers\LibroController.cs" />
+    <Compile Include="Controllers\RegistroComputadoraController.cs" />
+    <Compile Include="Controllers\RegistroLibroController.cs" />
     <Compile Include="Controllers\StrikeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
@@ -195,6 +198,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -215,6 +219,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\RegistroAjedrez\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Filters\" />
@@ -223,7 +228,6 @@
     <Folder Include="Views\Alumno\" />
     <Folder Include="Views\Computadora\" />
     <Folder Include="Views\Libro\" />
-    <Folder Include="Views\RegistroAjedrez\" />
     <Folder Include="Views\RegistroComputadora\" />
     <Folder Include="Views\RegistroLibro\" />
     <Folder Include="Views\Strike\" />

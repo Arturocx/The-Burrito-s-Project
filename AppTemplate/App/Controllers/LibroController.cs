@@ -23,7 +23,7 @@ namespace App.Controllers
         // GET: /Libro/
         public ActionResult Index()
         {
-            _libroEntity.Nombre = 123456;
+            _libroEntity.Nombre = "Algebra de Baldor";
             _libroEntity.Disponible = "Disponible";
             _libroEntity.Materia = "MATEMATICAS";
             _libroEntity.Detalles = "NUEVO";
