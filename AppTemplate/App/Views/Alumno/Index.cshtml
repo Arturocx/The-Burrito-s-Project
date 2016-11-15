@@ -1,0 +1,30 @@
+﻿@model IEnumerable<App.Entities.Alumno>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Alumnos</h2>
+<div class= "row">
+     <div class="col-lg-12">
+         <table class="table table-bordered" >
+             <thead>
+                 <tr>
+                    <th>Nombre</th>
+                     <th>Apellido</th>
+                 </tr>
+             </thead>
+            <tbody>
+                @foreach (var Alumno in Model)
+                {
+                    <tr>
+                        <td>@Alumno.Nombre</td>
+                        <td>@Alumno.Apellido</td>
+                        <td><a href="" class="btn-">Ver Detalle</a></td>
+                    </tr>
+                }
+               
+            </tbody>
+         </table>
+     </div>
+</div>
+

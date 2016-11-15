@@ -23,15 +23,34 @@ namespace App.Controllers
         // GET: /Alumno/
         public ActionResult Index()
         {
-            _alumnoEntity.NoControl = 123456;
-            _alumnoEntity.Grupo = "5DM";
-            _alumnoEntity.Nombre = "Miguel";
-            _alumnoEntity.Apellido = "Vargas";
-            _alumnoEntity.Foto = "https://scontent.ftij1-1.fna.fbcdn.net/v/t1.0-9/14446236_1168723523194498_8177993366894271305_n.jpg?oh=9f5c1914a2ff480255c97018fcf77412&oe=58AB50E8";
-            _alumnoEntity.Bloqueado = false;
-            _alumnoBll.Agregar(_alumnoEntity);
+            
+            var Alumnos = _alumnoBll.TraerTodo(); 
+
+            return View(Alumnos);
+        }
+
+        public ActionResult Agregar()
+        {
 
             return View();
+        }
+
+        public ActionResult AgregarAlumno(int noControl, string nombre, string apellido, string grupo, string foto)
+        {
+            _alumnoEntity.NoControl = noControl;
+            _alumnoEntity.Grupo = grupo;
+            _alumnoEntity.Nombre = nombre;
+            _alumnoEntity.Apellido = apellido;
+            _alumnoEntity.Foto = foto;
+            _alumnoEntity.Bloqueado = false;
+            _alumnoBll.Agregar(_alumnoEntity);
+            return View();
+        }
+
+        public ActionResult Detalle(int Id)
+        {
+            var alumno = _alumnoBll.TraerPorId(Id);
+            return View(alumno);
         }
 	}
 }
